@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stoopwebsites | Premium Webdesign uit Oudkarspel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700;900&display=swap');
+        body { font-family: 'Space Grotesk', sans-serif; background-color: #0b0d10; color: #ffffff; background-image: linear-gradient(rgba(255, 255, 255, 0.01) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.01) 1px, transparent 1px); background-size: 40px 40px; }
+        .sw-orange { color: #E8601A; }
+        .sw-bg-orange { background-color: #E8601A; }
+        .glass-nav { background: rgba(11, 13, 16, 0.85); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .glass-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); backdrop-filter: blur(10px); }
+        .animate-up { animation: fadeInUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; opacity: 0; }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(50px); } to { opacity: 1; transform: translateY(0); } }
+        .scroll-animate { opacity: 0; transform: translateY(40px); transition: all 1s cubic-bezier(0.2, 0.8, 0.2, 1); }
+        .scroll-animate.is-visible { opacity: 1; transform: translateY(0); }
+        .premium-hover { transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1); }
+        .premium-hover:hover { transform: translateY(-10px) scale(1.01); border-color: #E8601A; background: rgba(255,255,255,0.05); box-shadow: 0 25px 50px rgba(232,96,26,0.15); }
+        .btn-glow:hover { box-shadow: 0 0 30px rgba(232,96,26,0.4); transform: translateY(-3px); }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 py-4 px-6 md:px-12 glass-nav flex justify-between items-center">
+        <a href="index.html" class="flex items-center gap-3 text-xl font-black tracking-tighter cursor-pointer group">
+            <img src="https://i.ibb.co/PXsDvBf/Gemini-Generated-Image-oahncgoahncgoahn.png" alt="Stoopwebsites" class="w-10 h-10 rounded-full border-2 border-white/10 group-hover:border-[#E8601A] transition-all duration-700">
+            STOOP<span class="sw-orange">WEBSITES</span>
+        </a>
+        <div class="hidden md:flex gap-8 items-center text-[11px] font-bold uppercase tracking-widest">
+            <a href="#diensten" class="text-gray-400 hover:text-white transition-colors">Diensten</a>
+            <a href="#werkwijze" class="text-gray-400 hover:text-white transition-colors">Werkwijze</a>
+            <a href="portfolio.html" class="text-gray-400 hover:text-white transition-colors">Projecten</a>
+            <a href="#contact" class="bg-white text-black px-7 py-3 rounded-full hover:sw-bg-orange hover:text-white transition-all duration-500 italic shadow-lg btn-glow">Neem contact op</a>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex items-center justify-center px-6 relative pt-20">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] sw-bg-orange rounded-full opacity-[0.04] blur-[120px] pointer-events-none"></div>
+        <div class="max-w-5xl text-center z-10 w-full">
+            <div class="mb-10 flex justify-center animate-up" style="animation-delay: 0.1s;">
+                <div class="inline-flex items-center gap-3 px-5 py-2.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm shadow-xl">
+                    <span class="w-2 h-2 rounded-full sw-bg-orange animate-pulse"></span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-gray-300">Nu live vanuit Oudkarspel</span>
+                </div>
+            </div>
+            <h1 class="text-5xl md:text-[95px] lg:text-[115px] font-black mb-8 leading-[0.85] tracking-tighter animate-up" style="animation-delay: 0.2s;">
+                Digitale <span class="sw-orange italic">groei</span> <br>zonder gedoe.
+            </h1>
+            <p class="text-gray-400 max-w-2xl mx-auto mb-14 text-lg md:text-2xl font-light animate-up leading-relaxed" style="animation-delay: 0.3s;">
+                Professioneel webdesign voor lokale ondernemers. <br>Razendsnel, modern en voor een eerlijke prijs.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center animate-up" style="animation-delay: 0.4s;">
+                <a href="portfolio.html" class="sw-bg-orange px-12 py-6 rounded-full font-black uppercase text-[13px] tracking-[0.2em] text-white transition-all duration-500 shadow-2xl shadow-orange-900/40 italic btn-glow">Bekijk projecten</a>
+                <a href="#contact" class="border border-white/10 bg-white/5 text-white hover:bg-white hover:text-black px-12 py-6 rounded-full font-black uppercase text-[13px] tracking-[0.2em] transition-all duration-500 italic hover:-translate-y-1 shadow-xl">Contact opnemen</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="diensten" class="py-32 px-6 border-t border-white/5 bg-[#0d0f14]/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-24 scroll-animate">
+                <span class="sw-orange font-bold text-xs uppercase tracking-[0.4em] mb-4 block italic">Services</span>
+                <h2 class="text-4xl md:text-6xl font-black tracking-tighter uppercase italic">Wat we <span class="sw-orange">leveren.</span></h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card p-12 rounded-[3rem] scroll-animate premium-hover">
+                    <i class="fa-solid fa-code text-3xl sw-orange mb-8"></i>
+                    <h3 class="text-2xl font-black mb-4 uppercase italic tracking-tight">Maatwerk Design</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Geen dertien-in-een-dozijn templates. Ik bouw een unieke website die precies aansluit bij jouw bedrijf en identiteit.</p>
+                </div>
+                <div class="service-card p-12 rounded-[3rem] scroll-animate premium-hover" style="transition-delay: 0.1s;">
+                    <i class="fa-solid fa-mobile-screen text-3xl sw-orange mb-8"></i>
+                    <h3 class="text-2xl font-black mb-4 uppercase italic tracking-tight">Mobile First</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">80% van je klanten zit op hun smartphone. Jouw site is geoptimaliseerd voor een perfecte mobiele ervaring.</p>
+                </div>
+                <div class="service-card p-12 rounded-[3rem] scroll-animate premium-hover" style="transition-delay: 0.2s;">
+                    <i class="fa-solid fa-magnifying-glass-chart text-3xl sw-orange mb-8"></i>
+                    <h3 class="text-2xl font-black mb-4 uppercase italic tracking-tight">SEO Focus</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Ik zorg dat Google jouw bedrijf lokaal bovenaan zet bij de zoekopdrachten die er echt toe doen.</p>
+                </div>
+                <div class="service-card p-12 rounded-[3rem] scroll-animate premium-hover">
+                    <i class="fa-solid fa-server text-3xl sw-orange mb-8"></i>
+                    <h3 class="text-2xl font-black mb-4 uppercase italic tracking-tight">Hosting & SSL</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Jouw site staat op razendsnelle servers inclusief beveiligingscertificaat voor maximale veiligheid.</p>
+                </div>
+                <div class="service-card p-12 rounded-[3rem] scroll-animate premium-hover" style="transition-delay: 0.1s;">
+                    <i class="fa-solid fa-pen-nib text-3xl sw-orange mb-8"></i>
+                    <h3 class="text-2xl font-black mb-4 uppercase italic tracking-tight">Content Strategie</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Ik help je bij het schrijven van overtuigende teksten die van bezoekers betalende klanten maken.</p>
+                </div>
+                <div class="service-card p-12 rounded-[3rem] scroll-animate premium-hover" style="transition-delay: 0.2s;">
+                    <i class="fa-solid fa-handshake-angle text-3xl sw-orange mb-8"></i>
+                    <h3 class="text-2xl font-black mb-4 uppercase italic tracking-tight">Vast Beheer</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Voor een vast bedrag maandelijks regel ik alle hosting, techniek en updates. Wel zo rustig.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="werkwijze" class="py-32 px-6 border-t border-white/5">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-24 scroll-animate">
+                <h2 class="text-4xl md:text-6xl font-black tracking-tighter uppercase italic">De <span class="sw-orange">Werkwijze.</span></h2>
+            </div>
+            <div class="space-y-16 relative before:absolute before:inset-0 before:h-full before:w-px before:bg-white/10 md:before:mx-auto">
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group scroll-animate">
+                    <div class="flex items-center justify-center w-12 h-12 rounded-full bg-[#0b0d10] border-2 border-[#E8601A] text-white font-black z-10 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 transition-all group-hover:scale-125">1</div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] p-10 glass-card rounded-[3rem] premium-hover">
+                        <h4 class="text-2xl font-black sw-orange uppercase italic mb-4">Concept & Koffie</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed font-light">We bespreken je bedrijf en doelen. Ik maak een uniek ontwerpvoorstel dat precies bij jouw visie past.</p>
+                    </div>
+                </div>
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group scroll-animate">
+                    <div class="flex items-center justify-center w-12 h-12 rounded-full bg-[#0b0d10] border-2 border-[#E8601A] text-white font-black z-10 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 transition-all group-hover:scale-125">2</div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] p-10 glass-card rounded-[3rem] premium-hover">
+                        <h4 class="text-2xl font-black sw-orange uppercase italic mb-4">Bouw & Feedback</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed font-light">Ik bouw de website en jij krijgt een live-preview link. We finetunen de details tot elk streepje goed staat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 px-6 bg-[#08090b] border-y border-white/5 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-20 items-center">
+            <div class="lg:w-1/2 z-10 scroll-animate">
+                <h2 class="text-4xl md:text-6xl font-black mb-8 tracking-tighter uppercase italic">Vakkundigheid uit <span class="sw-orange">Oudkarspel.</span></h2>
+                <div class="h-1 w-20 sw-bg-orange mb-10 transition-all hover:w-40 duration-700"></div>
+                <p class="text-gray-400 text-xl font-light leading-relaxed mb-8">
+                    In de familie Stoop staat vakmanschap centraal. Met Stoopwebsites breng ik die nuchtere mentaliteit naar de digitale wereld. Geen ingewikkelde contracten, maar eerlijk en degelijk werk uit de regio Langedijk.
+                </p>
+            </div>
+            <div class="lg:w-1/2 w-full grid grid-cols-1 sm:grid-cols-2 gap-6 z-10">
+                <div class="glass-card p-8 rounded-[2.5rem] scroll-animate premium-hover">
+                    <i class="fa-solid fa-handshake text-xl sw-orange mb-5"></i>
+                    <h4 class="font-black text-lg mb-3 italic tracking-tight uppercase">Direct Contact</h4>
+                    <p class="text-xs text-gray-500">Geen keuzemenu's. Persoonlijk contact via WhatsApp of telefoon.</p>
+                </div>
+                <div class="glass-card p-8 rounded-[2.5rem] scroll-animate premium-hover" style="transition-delay: 0.1s;">
+                    <i class="fa-solid fa-layer-group text-xl sw-orange mb-5"></i>
+                    <h4 class="font-black text-lg mb-3 italic tracking-tight uppercase">Moderne Stack</h4>
+                    <p class="text-xs text-gray-500">Gebouwd met Tailwind CSS voor maximale snelheid en flexibiliteit.</p>
+                </div>
+                <div class="glass-card p-8 rounded-[2.5rem] scroll-animate premium-hover" style="transition-delay: 0.2s;">
+                    <i class="fa-solid fa-wrench text-xl sw-orange mb-5"></i>
+                    <h4 class="font-black text-lg mb-3 italic tracking-tight uppercase">Maandelijks Beheer</h4>
+                    <p class="text-xs text-gray-500">Een vast bedrag maandelijks inclusief hosting en alle nodige updates.</p>
+                </div>
+                <div class="glass-card p-8 rounded-[2.5rem] scroll-animate premium-hover" style="transition-delay: 0.3s;">
+                    <i class="fa-solid fa-location-dot text-xl sw-orange mb-5"></i>
+                    <h4 class="font-black text-lg mb-3 italic tracking-tight uppercase">Lokale Focus</h4>
+                    <p class="text-xs text-gray-500">Ik spreek de taal van de ondernemers uit de Noordkop.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 px-6 border-t border-white/5 bg-[#0d0f14]">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-black mb-20 text-center uppercase italic scroll-animate">Veelgestelde <span class="sw-orange">vragen.</span></h2>
+            <div class="space-y-4">
+                <div class="faq-item pb-8 scroll-animate premium-hover px-6 pt-6 rounded-3xl">
+                    <h4 class="text-xl font-black mb-3 italic uppercase tracking-tight">Hoeveel kost een website?</h4>
+                    <p class="text-gray-400 text-sm font-light leading-relaxed">Elk project is maatwerk. Omdat ik net ben gestart, profiteer je nu van scherpe tarieven die ver onder die van traditionele bureaus liggen.</p>
+                </div>
+                <div class="faq-item pb-8 scroll-animate premium-hover px-6 pt-6 rounded-3xl border-none">
+                    <h4 class="text-xl font-black mb-3 italic uppercase tracking-tight">Zit ik vast aan een contract?</h4>
+                    <p class="text-gray-400 text-sm font-light leading-relaxed">Nee. Na de bouw betaal je maandelijks een vast bedrag voor de hosting, service en updates. Opzeggen kan elk moment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-32 px-6 relative border-t border-white/5 bg-gradient-to-b from-[#08090b] to-[#0b0d10]">
+        <div class="max-w-4xl mx-auto glass-card rounded-[4rem] p-10 md:p-20 text-center scroll-animate relative overflow-hidden border-white/10">
+             <div class="absolute top-0 left-0 w-full h-1.5 sw-bg-orange"></div>
+             <h2 class="text-4xl md:text-6xl font-black mb-14 uppercase italic tracking-tighter leading-none">Start een <span class="sw-orange">gesprek.</span></h2>
+             
+             <form action="https://formsubmit.co/8b8f8a0cf920b9c49b96e4f56cd9f728" method="POST" class="space-y-8 text-left relative z-10">
+                <input type="hidden" name="_subject" value="Nieuw bericht via Stoopwebsites!">
+                <input type="hidden" name="_next" value="https://stoopwebsites.vercel.app/thanks.html">
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-2">
+                        <label class="text-[10px] font-black uppercase tracking-[0.3em] text-gray-500 ml-4">Jouw Naam</label>
+                        <input type="text" name="Naam" required class="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-5 text-white outline-none focus:border-[#E8601A] transition-all duration-300" placeholder="Naam">
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-[10px] font-black uppercase tracking-[0.3em] text-gray-500 ml-4">E-mailadres</label>
+                        <input type="email" name="Email" required class="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-5 text-white outline-none focus:border-[#E8601A] transition-all duration-300" placeholder="E-mail">
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <label class="text-[10px] font-black uppercase tracking-[0.3em] text-gray-500 ml-4">Jouw Bericht</label>
+                    <textarea name="Bericht" rows="6" required class="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-5 text-white outline-none focus:border-[#E8601A] transition-all duration-300 resize-none" placeholder="Waar kan ik je mee helpen?"></textarea>
+                </div>
+                <div class="text-center pt-6">
+                    <button type="submit" class="sw-bg-orange text-white px-16 py-6 rounded-full font-black uppercase text-[14px] tracking-[0.2em] transition-all duration-500 hover:-translate-y-2 italic border-none cursor-pointer shadow-2xl btn-glow">Verstuur Bericht</button>
+                </div>
+             </form>
+        </div>
+    </section>
+
+    <footer class="pt-40 pb-16 px-6 border-t border-white/5 bg-black/50">
+        <div class="max-w-5xl mx-auto text-center mb-24 scroll-animate">
+            <h2 class="text-5xl md:text-[80px] font-black mb-14 tracking-tighter italic uppercase leading-none">Tijd voor een <br><span class="sw-orange">nieuwe site?</span></h2>
+            <div class="flex flex-col sm:flex-row justify-center gap-8">
+                <a href="tel:+31627554846" class="sw-bg-orange text-white px-12 py-6 rounded-full font-black uppercase text-[13px] tracking-[0.2em] transition-all duration-500 shadow-2xl flex items-center justify-center gap-4 italic btn-glow">
+                    <i class="fa-solid fa-phone"></i> Bel direct 06 - 27 55 48 46
+                </a>
+                <a href="#contact" class="border border-white/10 bg-white/5 text-white hover:bg-white hover:text-black px-12 py-6 rounded-full font-black uppercase text-[13px] tracking-[0.2em] transition-all duration-500 flex items-center justify-center gap-4 hover:-translate-y-2 shadow-xl italic">
+                    <i class="fa-regular fa-envelope"></i> Neem contact op
+                </a>
+            </div>
+        </div>
+        <div class="text-center opacity-20 text-[10px] uppercase font-black tracking-[0.8em]">&copy; 2026 Stoopwebsites Oudkarspel</div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('is-visible'); } });
+            }, { threshold: 0.1 });
+            document.querySelectorAll('.scroll-animate').forEach((el) => { observer.observe(el); });
+        });
+    </script>
+</body>
+</html>
