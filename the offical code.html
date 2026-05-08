@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Stoopwebsites | Premium Webdesign uit Oudkarspel</title>
+    <meta name="description" content="Digitale groei zonder gedoe. Razendsnelle, maatwerk websites voor lokale ondernemers in de Noordkop.">
+    <link rel="icon" type="image/png" href="https://i.ibb.co/PXsDvBf/Gemini-Generated-Image-oahncgoahncgoahn.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700;900&display=swap');
+        
+        body { 
+            font-family: 'Space Grotesk', sans-serif; 
+            background-color: #0b0d10; 
+            color: #ffffff; 
+            background-size: 40px 40px;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.01) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
+        }
+        
+        .sw-orange { color: #E8601A; }
+        .sw-bg-orange { background-color: #E8601A; }
+        .glass-nav { background: rgba(11, 13, 16, 0.85); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .glass-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); backdrop-filter: blur(10px); }
+        
+        .scroll-animate { opacity: 0; transform: translateY(40px); transition: all 1s cubic-bezier(0.2, 0.8, 0.2, 1); }
+        .scroll-animate.is-visible { opacity: 1; transform: translateY(0); }
+
+        .premium-hover { transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1); }
+        .premium-hover:hover { 
+            transform: translateY(-10px); 
+            border-color: #E8601A; 
+            background: rgba(255,255,255,0.05); 
+        }
+
+        .btn-glow-orange:hover {
+             background-color: #E8601A;
+             color: #ffffff;
+             box-shadow: 0 0 30px rgba(232,96,26,0.4);
+        }
+
+        #success-overlay { display: none; position: fixed; inset: 0; z-index: 100; background: rgba(11, 13, 16, 0.98); backdrop-filter: blur(20px); align-items: center; justify-content: center; }
+        #success-overlay.active { display: flex; }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <div id="success-overlay">
+        <div class="text-center px-6">
+            <h1 class="text-6xl font-black mb-6 uppercase italic">Bericht <span class="sw-orange">ontvangen!</span></h1>
+            <button onclick="closeSuccess()" class="sw-bg-orange text-white px-12 py-5 rounded-full font-black uppercase text-[12px] tracking-widest italic">Terug naar de site</button>
+        </div>
+    </div>
+
+    <nav class="fixed w-full z-50 py-4 px-6 md:px-12 glass-nav flex justify-between items-center">
+        <a href="#" class="flex items-center gap-3 text-xl font-black tracking-tighter group">
+            <img src="https://i.ibb.co/PXsDvBf/Gemini-Generated-Image-oahncgoahncgoahn.png" class="w-10 h-10 rounded-full border-2 border-white/10 group-hover:border-[#E8601A] transition-all">
+            STOOP<span class="sw-orange">WEBSITES</span>
+        </a>
+        <div class="hidden md:flex gap-8 items-center text-[11px] font-bold uppercase tracking-widest text-gray-400">
+            <a href="#diensten" class="hover:text-white transition-all">Diensten</a>
+            <a href="#over-mij" class="hover:text-white transition-all">Over mij</a>
+            <a href="portofolio.html" class="hover:text-white transition-all">Projecten</a>
+            <a href="#contact" class="bg-white text-black px-7 py-3 rounded-full hover:sw-bg-orange hover:text-white transition-all italic">Neem contact op</a>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex items-center justify-center px-6 relative pt-20">
+        <div class="max-w-5xl text-center z-10">
+            <h1 class="text-5xl md:text-[90px] font-black mb-8 leading-[0.85] tracking-tighter uppercase">
+                Digitale <span class="sw-orange italic">groei</span> <br>zonder gedoe.
+            </h1>
+            <p class="text-gray-400 max-w-2xl mx-auto mb-14 text-lg md:text-2xl font-light">
+                Professioneel webdesign voor ( lokale ) ondernemers. <br>Razendsnel, modern en voor een eerlijke prijs.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                <a href="portofolio.html" class="sw-bg-orange px-12 py-6 rounded-full font-black uppercase text-[13px] tracking-widest text-white italic btn-glow-orange transition-all">Bekijk projecten</a>
+                <a href="#contact" class="border border-white/10 bg-white/5 text-white hover:bg-white hover:text-black px-12 py-6 rounded-full font-black uppercase text-[13px] tracking-widest transition-all italic">Contact opnemen</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 border-y border-white/5 bg-black/20">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 text-center">
+            <div class="scroll-animate">
+                <i class="fa-solid fa-bolt sw-orange text-3xl mb-4"></i>
+                <h4 class="font-black uppercase italic mb-2">Snelheid</h4>
+                <p class="text-xs text-gray-500 font-light leading-relaxed">Geoptimaliseerd voor <br>maximale Google score.</p>
+            </div>
+            <div class="scroll-animate">
+                <i class="fa-solid fa-mobile-screen sw-orange text-3xl mb-4"></i>
+                <h4 class="font-black uppercase italic mb-2">Mobile First</h4>
+                <p class="text-xs text-gray-500 font-light leading-relaxed">Perfect op elk scherm, <br>van mobiel tot desktop.</p>
+            </div>
+            <div class="scroll-animate">
+                <i class="fa-solid fa-euro-sign sw-orange text-3xl mb-4"></i>
+                <h4 class="font-black uppercase italic mb-2">Geen Abo</h4>
+                <p class="text-xs text-gray-500 font-light leading-relaxed">Eenmalige investering, <br>daarna gewoon eigenaar.</p>
+            </div>
+            <div class="scroll-animate">
+                <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#E8601A]/10 border border-[#E8601A]/30 rounded-2xl mb-4">
+                    <span class="text-xl font-black text-green-500">100</span>
+                    <div class="flex gap-1">
+                        <div class="w-1.5 h-1.5 rounded-full bg-green-500"></div>
+                        <div class="w-1.5 h-1.5 rounded-full bg-green-500"></div>
+                        <div class="w-1.5 h-1.5 rounded-full bg-green-500"></div>
+                    </div>
+                </div>
+                <h4 class="font-black uppercase italic mb-2">SEO Score</h4>
+                <p class="text-xs text-gray-500 font-light leading-relaxed">Technisch gebouwd om <br>bovenaan te komen.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 px-6 bg-[#0b0d10]">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-20 scroll-animate">
+                <h2 class="text-4xl md:text-6xl font-black uppercase italic leading-none">Voor & <span class="sw-orange">Na.</span></h2>
+                <p class="text-gray-400 mt-6 max-w-2xl mx-auto font-light text-lg">Zie met eigen ogen wat een professionele upgrade voor jouw online uitstraling doet.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 scroll-animate">
+                <div class="glass-card p-4 sm:p-8 rounded-[3rem] opacity-60 grayscale">
+                    <img src="https://i.ibb.co/WNd2nt8D/E3-ED6-B9-F-8-AB8-424-F-B539-D771-C1-DE00-C9.png" class="w-full aspect-video object-cover rounded-[2rem] border border-white/5 mb-8">
+                    <h3 class="text-2xl font-black mb-4 uppercase italic tracking-tight text-gray-400">Oude Situatie</h3>
+                </div>
+                <div class="glass-card p-4 sm:p-8 rounded-[3rem] border-[#E8601A]/30 relative overflow-hidden">
+                    <img src="https://i.ibb.co/5XGs5b38/D06-F17-A0-05-A7-4258-A49-B-AE6414998453.png" class="w-full aspect-video object-cover rounded-[2rem] border border-[#E8601A]/20 mb-8 relative z-10">
+                    <h3 class="text-2xl font-black mb-4 uppercase italic tracking-tight text-white">De Upgrade</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="diensten" class="py-32 px-6 border-t border-white/5 bg-[#0d0f14]/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-24 scroll-animate">
+                <h2 class="text-4xl md:text-6xl font-black uppercase italic leading-none">Wat we <span class="sw-orange">leveren.</span></h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="glass-card p-12 rounded-[3rem] scroll-animate premium-hover">
+                    <i class="fa-solid fa-code text-3xl sw-orange mb-8"></i>
+                    <h3 class="text-2xl font-black mb-4 uppercase italic tracking-tight">Maatwerk Design</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed font-light">Unieke websites die precies aansluiten bij jouw bedrijf en identiteit.</p>
+                </div>
+                <div class="glass-card p-12 rounded-[3rem] scroll-animate premium-hover">
+                    <i class="fa-solid fa-chart-line text-3xl sw-orange mb-8"></i>
+                    <h3 class="text-2xl font-black mb-4 uppercase italic tracking-tight">SEO Focus</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed font-light">Ik zorg dat Google jouw bedrijf lokaal bovenaan zet bij zoekopdrachten.</p>
+                </div>
+                <div class="glass-card p-12 rounded-[3rem] scroll-animate premium-hover">
+                    <i class="fa-solid fa-handshake-angle text-3xl sw-orange mb-8"></i>
+                    <h3 class="text-2xl font-black mb-4 uppercase italic tracking-tight">Vast Beheer</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed font-light">Voor een vast bedrag regel ik alle hosting en technische updates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="over-mij" class="py-32 px-6 border-t border-white/5">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+            <div class="w-full md:w-5/12 scroll-animate relative">
+                <div class="aspect-square rounded-[3rem] overflow-hidden border border-white/10 bg-[#08090b] flex items-center justify-center">
+                    <i class="fa-solid fa-user-astronaut text-8xl text-gray-800"></i>
+                </div>
+            </div>
+            <div class="w-full md:w-7/12 scroll-animate">
+                <h2 class="text-4xl md:text-5xl font-black mb-8 uppercase italic leading-none">Vakmanschap uit <span class="sw-orange">Oudkarspel.</span></h2>
+                <p class="text-gray-400 text-lg leading-relaxed mb-6 font-light">
+                    Hoi, ik ben Stoop. Ik bouw snelle websites voor ondernemers in de Langedijk die klaar zijn voor de volgende stap. Geen vage contracten, gewoon eerlijk werk.
+                </p>
+                <p class="text-gray-400 text-lg leading-relaxed mb-8 font-light">
+                    Direct contact via mail en telefoon. Geen gedoe, gewoon een dijk van een website.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-32 px-6 border-t border-white/5">
+        <div class="max-w-4xl mx-auto glass-card rounded-[4rem] p-10 md:p-20 text-center scroll-animate relative overflow-hidden">
+             <h2 class="text-4xl md:text-6xl font-black mb-14 uppercase italic leading-none">Start een <br><span class="sw-orange">gesprek.</span></h2>
+             <form action="https://formsubmit.co/8b8f8a0cf920b9c49b96e4f56cd9f728" method="POST" class="space-y-8 text-left">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <input type="text" name="Naam" required class="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-5 text-white outline-none focus:border-[#E8601A] transition-all" placeholder="Naam">
+                    <input type="email" name="Email" required class="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-5 text-white outline-none focus:border-[#E8601A] transition-all" placeholder="E-mail">
+                </div>
+                <textarea name="Bericht" rows="6" required class="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-5 text-white outline-none focus:border-[#E8601A] transition-all resize-none" placeholder="Waar kan ik je mee helpen?"></textarea>
+                <div class="text-center">
+                    <button type="submit" class="sw-bg-orange text-white px-16 py-6 rounded-full font-black uppercase text-[14px] tracking-widest transition-all italic btn-glow-orange">Verstuur Bericht</button>
+                </div>
+             </form>
+        </div>
+    </section>
+
+    <footer class="py-16 px-6 border-t border-white/5 bg-black/50 text-center">
+        <div class="opacity-20 text-[10px] uppercase font-black tracking-[0.8em]">&copy; 2026 Stoopwebsites Oudkarspel</div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.scroll-animate, .glass-card').forEach((el) => observer.observe(el));
+        });
+
+        function closeSuccess() {
+            document.getElementById('success-overlay').classList.remove('active');
+        }
+    </script>
+</body>
+</html>
